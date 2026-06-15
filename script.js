@@ -83,7 +83,8 @@ ${message}`;
 }
 
 gsap.from(".home-img", {
-    x: 100,
+    x: window.innerWidth > 768 ? 100 : 0,
+    y: window.innerWidth <= 768 ? 50 : 0,
     opacity: 0,
     duration: 1.2,
     ease: "power3.out"

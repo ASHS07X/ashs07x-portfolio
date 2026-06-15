@@ -32,9 +32,10 @@
 }
 
 .loader-logo{
-    width:650px;
+    width:800px;
     opacity:0;
     transform:scale(0);
+    margin-bottom: 2px;
 }
 
 .decode-text{
@@ -42,7 +43,7 @@
     font-size:6rem;
     font-family:"Bebas Neue",sans-serif;
     letter-spacing:6px;
-    margin-top:-140px;
+    margin-top:-200px;
 }
 
 @media (max-width:768px){
@@ -1366,7 +1367,16 @@ textarea:focus-visible{
         width:85vw !important;
         max-width:320px !important;
         margin:0 auto !important;
+        align-items: center;
         position:static !important;
         transform:none !important;
     }
+}
+
+@media (max-width:768px){
+
+    .home-img{
+        transform: none !important;
+    }
+
 }
