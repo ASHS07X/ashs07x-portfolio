@@ -32,7 +32,7 @@
 }
 
 .loader-logo{
-    width:500px;
+    width:650px;
     opacity:0;
     transform:scale(0);
 }
@@ -42,21 +42,30 @@
     font-size:6rem;
     font-family:"Bebas Neue",sans-serif;
     letter-spacing:6px;
-    margin-top:-100px;
+    margin-top:-140px;
 }
 
 @media (max-width:768px){
 
     .loader-content{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
         gap:1rem;
+        transform: translateY(0);
     }
 
     .loader-logo{
-        width:180px;
+        width:280px;
+        height:auto;
     }
 
     .decode-text{
-        display:none;
+        display:block;
+        font-size:4rem;
+        margin-top:-40px;
+        letter-spacing:4px;
     }
 
 }
@@ -1324,4 +1333,40 @@ textarea:focus-visible{
         margin:0 auto;
     }
 
+}
+
+@media (max-width: 768px){
+
+    .home{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+        gap:2rem !important;
+        width:100% !important;
+        overflow:hidden !important;
+    }
+
+    .home-content{
+        width:100% !important;
+        text-align:center !important;
+        align-items:center !important;
+    }
+
+    .home-img{
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+        width:100% !important;
+        margin:0 auto !important;
+    }
+
+    .home-img img{
+        display:block !important;
+        width:85vw !important;
+        max-width:320px !important;
+        margin:0 auto !important;
+        position:static !important;
+        transform:none !important;
+    }
 }
