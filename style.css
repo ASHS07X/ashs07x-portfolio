@@ -17,13 +17,10 @@
 #loader{
     position: fixed;
     inset: 0;
-
     background: #0a0a0a;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     z-index: 99999;
 }
 
@@ -32,25 +29,37 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    transform: translateY(-120px);
 }
 
 .loader-logo{
-    width:800px;
+    width:500px;
     opacity:0;
     transform:scale(0);
-    margin-bottom: 0;
 }
 
 .decode-text{
-    color: #C8A96B;
-    font-size: 6rem;
-    font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 6px;
-    margin-top: -200px;
+    color:#C8A96B;
+    font-size:6rem;
+    font-family:"Bebas Neue",sans-serif;
+    letter-spacing:6px;
+    margin-top:-100px;
 }
 
+@media (max-width:768px){
 
+    .loader-content{
+        gap:1rem;
+    }
+
+    .loader-logo{
+        width:180px;
+    }
+
+    .decode-text{
+        display:none;
+    }
+
+}
 
 .cursor-glow{
     position: fixed;
@@ -1258,18 +1267,30 @@ textarea:focus-visible{
         display: none;
     }
     .home{
-        flex-direction: column;
-        gap: 3rem;
-        margin: 5rem 0;
-    }
-    .home-content{
-        align-items: center;
-        text-align: center;
-    }
-    .home-img img{
-        width:75vw;
-        max-width: 320px;
-    }
+    flex-direction: column;
+    gap: 3rem;
+    margin: 5rem 0;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content{
+    align-items: center;
+    text-align: center;
+}
+
+.home-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 75vw;
+    max-width: 320px;
+    margin: 0 auto;
+}
     .about{
         flex-direction: column-reverse;
         text-align: center;
@@ -1286,4 +1307,21 @@ textarea:focus-visible{
     .contact form{
         flex-direction: column;
     }
+}
+
+@media(max-width:1285px){
+
+    .home-img{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .home-img img{
+        width:75vw;
+        max-width:320px;
+        margin:0 auto;
+    }
+
 }
