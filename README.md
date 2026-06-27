@@ -69,7 +69,7 @@ Predictive analytics solution for energy demand forecasting and optimization.
 
 * GitHub: https://github.com/ASHS07X
 * LinkedIn: https://www.linkedin.com/in/akash-v-ashs07x
-* Instagram: https://www.instagram.com/ashs07x
+* Instagram: https://www.instagram.com/ashs07x_/
 
 ## License
 
